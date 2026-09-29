@@ -6,13 +6,31 @@
         <title></title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
         <meta name="description" content=""><!--keywords/snippet for search engines-->
         <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+        <link rel="stylesheet" href="style.css">
+       <script>
+            (function(d) {
+            var config = {
+             kitId: 'suh8hjx',
+            scriptTimeout: 3000,
+            async: true
+         },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
     </head>
     <body>
-        <p>I evoke the term 'handmade web' to suggest slowness and smallness as a forms of resistance.</p>
-        <p>In today's highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers <mark>it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.</mark></p>
+        <p><em>I evoke the term 'handmade web' to suggest slowness and smallness as a forms of resistance.</em></p>
+        <p>In today's highly commercialised web of multinational corporations, proprietary applications, read-only devices, search algorithms, Content Management Systems, WYSIWYG editors, and digital publishers it becomes an increasingly radical act to hand-code and self-publish experimental web art and writing projects.</p>
         <p>The more proprietary, predatory, and puerile a place the web becomes, the more committed I am to using it in poetic and intransigent ways.</p>
         <p>J. R. Carpenter, March 2015.</p>
+    
+    <div class="button">
+      <a href="p5.html" class="button-link">
+            <img src="../assets/leftarrow.png" alt="leftarrow" class="img-default">
+            <img src="../assets/leftarrow_hover.png" alt="leftarrow_hover" class="img-hover"></a>
+     <a href="index.html" class="button-link">
+            <img src="../assets/home.png" alt="home" class="img-default">
+            <img src="../assets/home_hover.png" alt="home_hover" class="img-hover"></a>
+    </div>
     </body>
-        <a href="p5.html">back</a>
-        <a href="index.html">home</a>
 </html>

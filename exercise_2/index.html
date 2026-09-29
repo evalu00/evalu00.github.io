@@ -6,9 +6,25 @@
         <title></title><!--declaring the title, or name, of the HTML document. displayed in the browser's title bar-->
         <meta name="description" content=""><!--keywords/snippet for search engines-->
         <meta name="viewport" content="width=device-width"><!--the browser will (probably) render the width of the page at the width of its own screen -->
+       <script>
+            (function(d) {
+            var config = {
+             kitId: 'suh8hjx',
+            scriptTimeout: 3000,
+            async: true
+         },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+         </script>
+        <link rel="stylesheet" href="style.css">
     </head>
-    <body> <h1>A Handmade Web</h1>
-     <p>The term 'handmade' usually refers to objects made by hand or by using simple tools rather than machines. The <mark>result may be homely</mark>— as in a child's clay ashtray — <mark>or exquisite</mark> — as in a pair of bespoke brogues. </p>
+    <body>   
+       <h1>A Handmade Web</h1>
+        <p>The term 'handmade' usually refers to objects made by hand or by using simple tools rather than machines. The result may be homely—as in a child's clay ashtray—or exquisite—as in a pair of bespoke brogues.</p>
+    
+    <div class="button">
+    <a href="p1.html" class="button-link">
+       <img src="../assets/rightarrow.png" alt="rightarrow" class="img-default">
+       <img src="../assets/rightarrow_hover.png" alt="rightarrow_hover" class="img-hover"></a>
     </body> 
-        <a href="p1.html">next</a>
 </html>
