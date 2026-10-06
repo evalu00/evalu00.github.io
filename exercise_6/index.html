@@ -1,0 +1,40 @@
+<!DOCTYPE html><!--document type declaration-->
+<html>
+<head>
+        <style>
+            div {
+                width: 200px;
+                border: solid 1px red;
+
+            }
+        </style>
+</head>
+<body>
+    <button>Button</button>
+    <div style="background-color: white"></div>
+    <div></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", (event) => {
+            const buttons = document.querySelectorAll('button');
+            const divs = document.querySelectorAll('div');
+
+            buttons.forEach(function(button){
+
+                button.addEventLisener('click', function(){
+
+                    divs.forEach(function(div){
+                      if (div.style.backgroundColor == 'white') {
+                       
+                        console.log('state A')
+                      
+                    }else {
+                        console.log('state B')
+                          }
+                      div.classList.toggle('active');
+                    });
+                });
+            });
+    });
+</script>
+</body>
+</html>
