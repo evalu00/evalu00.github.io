@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: #9fdadf;
+    overflow: hidden;
+    transition: background-color 1.2s;
+}
+
+#cloud {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 230px;
+    height: 170px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 2;
+    transition: top 1s, scale 1s;
+}
+
+.cloud-shape {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 230px;
+    height: 70px;
+    background: #dfe8e9;
+    border-radius: 50px;
+    transform: scale(0.3);
+    transform-origin: center center;
+    transition: transform 2.5s;
+}
+
+.cloud-shape::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: #dfe8e9;
+    border-radius: 50%;
+    bottom: 15px;
+    left: 20px;
+}
+
+.cloud-shape::after {
+    content: "";
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background: #dfe8e9;
+    border-radius: 50%;
+    bottom: 5px;
+    right: 15px;
+}
+
+#rain {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.drop {
+    position: absolute;
+    top: -30px;
+    width: 2px;
+    height: 25px;
+    background: #dfe8e9;
+    animation: fall 0.9s linear infinite;
+    border-radius: 50px;
+}
+
+.drop:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.drop:nth-child(2) {
+    left: 30%;
+    animation-delay: .3s;
+}
+
+.drop:nth-child(3) {
+    left: 50%;
+    animation-delay: .6s;
+}
+
+.drop:nth-child(4) {
+    left: 70%;
+    animation-delay: .2s;
+}
+
+.drop:nth-child(5) {
+    left: 90%;
+    animation-delay: .8s;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(110vh);
+    }
+}
+
+body.rain {
+    background-color: #6e8086;
+}
+
+body.rain #cloud {
+    top: 50%;
+}
+
+body.rain .cloud-shape {
+    transform: translateY(-15px) scale(1.8);
+}
+
+body.rain #rain {
+    opacity: 1;
+}

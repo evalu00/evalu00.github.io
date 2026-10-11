@@ -38,16 +38,13 @@
 
     @keyframes colorchange {
       0% {
-        background-color: #74ccd2
+        background-color: #7cbcc0;
       }
-      33% {
-        background-color:#72ab75;
-      }
-      66% {
-        background-color:#4a5b97;
+      50% {
+        background-color:#9ec5a0;
       }
       100% {
-        background-color:rgb(61, 102, 118);
+        background-color:rgb(65, 117, 138);
       }
     }
 
@@ -55,18 +52,17 @@
       position: absolute;
       width: 35px;
       height: 35px;
-      background-color: #74ccd2;
+      background-color: #7cbcc0;
 
       transition: border-radius 0.3s ease, transform 0.3s ease;
     }
 
     .square:hover {
       border-radius: 50%;
-      transform: scale(0.6);
-      background-color: rgb(61, 102, 118);
+      transform: scale(20);
 
       animation-name: colorchange;
-      animation-duration: 3s;
+      animation-duration: 1s;
     }
 
     .s1 {

@@ -4,11 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>My test page</title>
+           <script>
+            (function(d) {
+         var config = {
+              kitId: 'suh8hjx',
+              scriptTimeout: 3000,
+              async: true
+             },
+             h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+             })(document);
+         </script>
+        <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Hello, World!</h1>
     <p><a href="exercise_2/index.html">exercise 2 & 3!</a></p>
     <p><a href="./exercise_4/index.html">exercise 4 !</a></p>
     <p><a href="./exercise_5/index.html">exercise 5 !</a></p>
+    <p><a href="./exercise_6/index.html">exercise 6 !</a></p>
   </body>
 </html>

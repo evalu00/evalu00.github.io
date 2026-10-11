@@ -1,40 +1,26 @@
 <!DOCTYPE html><!--document type declaration-->
-<html>
+<html lang="en">
 <head>
-        <style>
-            div {
-                width: 200px;
-                border: solid 1px red;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>toggle</title>
 
-            }
-        </style>
+  <link rel="stylesheet" href="style.css">
+  <script src="style.js" defer></script>
 </head>
+
 <body>
-    <button>Button</button>
-    <div style="background-color: white"></div>
-    <div></div>
-    <script>
-        document.addEventListener("DOMContentLoaded", (event) => {
-            const buttons = document.querySelectorAll('button');
-            const divs = document.querySelectorAll('div');
+    <button id="cloud">
+         <span class="cloud-shape"></span>
+    </button>
 
-            buttons.forEach(function(button){
+    <div id="rain">
+         <div class="drop"></div>
+         <div class="drop"></div>
+         <div class="drop"></div>
+         <div class="drop"></div>
+         <div class="drop"></div>
+    </div>
 
-                button.addEventLisener('click', function(){
-
-                    divs.forEach(function(div){
-                      if (div.style.backgroundColor == 'white') {
-                       
-                        console.log('state A')
-                      
-                    }else {
-                        console.log('state B')
-                          }
-                      div.classList.toggle('active');
-                    });
-                });
-            });
-    });
-</script>
 </body>
 </html>
